@@ -20,7 +20,7 @@ public class HW3_Back_And_Forth_Navigation {
         //gmail.click();
         //4- Verify title contains:
         //Expected: Gmail
-        String expectedTitle="Gmail";
+        String expectedTitle="Gmail: Private and secure email at no cost | Google Workspace";
         String actualTitle =driver.getTitle();
         if (expectedTitle.contains(actualTitle)){
             System.out.println("Title verification PASSED!");
@@ -34,9 +34,9 @@ public class HW3_Back_And_Forth_Navigation {
         String expectedTitle2 = "Google";
         String actualTitle2 = driver.getTitle();
         if(expectedTitle2.equals(actualTitle2)){
-            System.out.println("Title-2 verification PASSED");
+           System.out.println("Title-2 verification PASSED");
         }else {
-            System.out.println("Title-2 verification FAILED");
+           System.out.println("Title-2 verification FAILED");
         }
 
     }

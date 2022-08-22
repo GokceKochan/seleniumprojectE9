@@ -19,9 +19,9 @@ public class HW1_EtsyTitleVerifications {
         driver.findElement(By.xpath("/html/body/div[5]/div[2]/div/div[2]/div/div[2]/div[2]/button")).click();
         // 3. Search for “wooden spoon”
         WebElement search = driver.findElement(By.name("search_query"));
-        search.sendKeys("wooden spoon"+ Keys.ENTER);
+        search.sendKeys("wooden spoon",Keys.ENTER);
         // 4. Verify title:
-        String expected = "wooden spoon | Etsy";
+        String expected = "Wooden spoon - Etsy UK";
         String actual = driver.getTitle();
         if(expected.equals(actual)){
             System.out.println("Title verification PASSED! ");
